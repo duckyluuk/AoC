@@ -1,5 +1,5 @@
 let inputData = ""
-fetch("data/day0.txt")
+fetch("data/day3.txt")
   .then(res => res.text)
   .then(data => inputData = data)
 
@@ -25,7 +25,7 @@ function day3_1(){
     console.log("Time:" + (Date.now()-t) + "ms")
 }
 
-function day3_2_2(){
+function day3_2(){
     let t = Date.now()
     let data = inputData.split("\n")
     for(let i=0; i<data.length; i++) {
