@@ -3,7 +3,6 @@ fetch("data/day6.txt")
   .then(res => res.text)
   .then(data => inputData = data)
 
-// Part 1
 function day6_1() {
   let t = Date.now()
   let data = inputData
@@ -21,7 +20,6 @@ function day6_1() {
   console.log("Time:" + (Date.now()-t) + "ms")
 }
 
-// Part 2
 function day6_2() {
   let t = Date.now()
   let data = inputData
@@ -40,7 +38,7 @@ function day6_2() {
   console.log("Time:" + (Date.now()-t) + "ms")
 }
 
-// Custom function outside of challenges, that can calculate the amount of fish even after a million days, or more
+// Custom function outside of challenges, that can calculate the amount of fish after more days
 function day6_big(days) {
   let t = Date.now()
   let data = inputData
