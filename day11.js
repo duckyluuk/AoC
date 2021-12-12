@@ -3,7 +3,7 @@ fetch("data/day11.txt")
   .then(res => res.text)
   .then(data => inputData = data)
 
-function day11_1_2() {
+function day11_1() {
     let t = Date.now()
     let data = inputData.split("\n").map(d => d.split("").map(n => +n))
     let flash=0
@@ -38,7 +38,7 @@ function day11_1_2() {
     }
 }
 
-function day11_2_2() {
+function day11_2() {
     let t = Date.now()
     let data = inputData.split("\n").map(d => d.split("").map(n => +n))
     let end = false, i = 0
