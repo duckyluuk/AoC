@@ -5,7 +5,7 @@ fetch("data/day5.txt")
 
 function day5_1() {
     let t = Date.now()
-    let data = inputDataata.split("\n")
+    let data = inputData.split("\n")
     for(var i = 0; i < data.length; i++){
       data[i] = data[i].split("->")
       for(var j = 0; j < data[i].length; j++){
