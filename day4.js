@@ -5,7 +5,7 @@ fetch("data/day4.txt")
 
 function day4_1() {
     let t = Date.now()
-    let boards = data.split("\n\n")
+    let boards = inputData.split("\n\n")
     let nums = boards.shift()
     for(let i=0; i<boards.length; i++) {
       boards[i] = boards[i].split("\n")
