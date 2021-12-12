@@ -6,7 +6,7 @@ fetch("data/day2.txt")
 function day2_1() {
     let t = Date.now()
     let pos=[0,0]
-    data.split("\n").map(e => { return e.split(" ") }).forEach(el => { 
+    inputData.split("\n").map(e => { return e.split(" ") }).forEach(el => { 
       if(el[0] == "forward") pos[0]+= +el[1];
       else if(el[0] == "up") pos[1]-= +el[1];
       else if(el[0] == "down") pos[1]+= +el[1]
@@ -18,7 +18,7 @@ function day2_1() {
 function day2_2() {
     let t = Date.now()
     let pos=[0,0,0]
-    data.split("\n").map(e => { return e.split(" ") }).forEach(el => { 
+    inputData.split("\n").map(e => { return e.split(" ") }).forEach(el => { 
       if(el[0] == "forward") {
         pos[0]+= +el[1];
         pos[1]+= +el[1]*pos[2];
